@@ -1,0 +1,47 @@
+#root {
+    max-width: 1200px;
+    margin: 0 auto; 
+}
+
+.container {
+    display: -webkit-flex; 
+    -webkit-box-flex: wrap; 
+    display: flex; 
+    flex-wrap: wrap;
+}
+
+.card {
+    margin: 1rem; 
+    background: #FFF;
+    box-shadow: 2px 4px 25px rgba(0,0,0,0.1); 
+    border-radius: 12px;
+    overflow: hidden; 
+
+    &:hover {
+        transform: rotateY(180deg); 
+        opacity: 0; 
+        visibility: hidden; 
+        transition: all 0.5s linear;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .card {
+        flex: 1 1 calc(50% - 2rem); 
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .card {
+        flex: 1 1 calc(33% - 2rem);
+    }
+}
+
+p {
+    padding: 0 2.5rem 2.5rem; 
+    margin: 0; 
+}
+
+h1 {
+    text-align: center;
+}

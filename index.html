@@ -6,11 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Movie App</title>
+    <!-- Google Fonts  -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600|Roboto+Slab" rel="stylesheet">
+    <!-- Custom CSS -->
     <link href="index.css" rel="stylesheet" />
 </head>
 
 <body>
-    <div id="root"></div>
+    <div id="root">
+        <div class="container">
+            <div class="box box-left">
+                <form id="movie-form" name="movie-form">
+                    <h3 class="text-header">Enter a movie title</h3>
+                    <input class="text-input" type="text" id="movie-title" name="title" placeholder="Search...">
+                    <div>
+                        <input class="submit-btn" type="submit" value="Submit" />
+                    </div>
+                </form>
+            </div>
+            <div id="movie-data" class="box box-right">
+            </div>
+        </div>
+    </div>
 </body>
 
 <script src="index.js"></script>

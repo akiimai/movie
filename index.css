@@ -1,27 +1,90 @@
+body {
+  background-color: #E6FAFF;
+}
+
+body:not(.user-tabbing) button:focus,
+body:not(.user-tabbing) input:focus,
+body:not(.user-tabbing) select:focus,
+body:not(.user-tabbing) textarea:focus {
+  outline: none;
+}
+
 #root {
   max-width: 1200px;
   margin: 0 auto;
 }
 
 .container {
+  background-color: #FFF;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  height: 400px;
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.box {
+  width: 100%;
+  text-align: center;
+}
+
+.text-header {
+  font-family: "Roboto Slab", serif;
+  color: #585858;
+}
+
+.text-input {
+  border: solid 1px #D8D8D8;
+  border-radius: 5px;
+  padding: 7px 10px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.box-left {
+  margin: auto;
+}
+
+.submit-btn {
+  margin: 15px 0;
+  padding: 5px 20px;
+  border-radius: 5px;
+  background-color: #A0A0A0;
+  border: solid 1px #A0A0A0;
+  color: #FFF;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+.submit-btn:hover {
+  background-color: #D8D8D8;
+  border: solid 1px #D8D8D8;
+  cursor: pointer;
+}
+
+.box-right {
+  background-color: #EFEFEF;
   display: -webkit-flex;
   -webkit-box-flex: wrap;
   display: flex;
   flex-wrap: wrap;
+  overflow: hidden;
 }
 
 .card {
   margin: 1rem;
   background: #FFF;
   box-shadow: 2px 4px 25px rgba(0, 0, 0, 0.1);
-  border-radius: 12px;
   overflow: hidden;
 }
-.card:hover {
-  transform: rotateY(180deg);
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.5s linear;
+
+.movie-img {
+  height: 100px;
+  object-fit: contain;
 }
 
 @media screen and (min-width: 600px) {
@@ -33,14 +96,6 @@
   .card {
     flex: 1 1 calc(33% - 2rem);
   }
-}
-p {
-  padding: 0 2.5rem 2.5rem;
-  margin: 0;
-}
-
-h1 {
-  text-align: center;
 }
 
 /*# sourceMappingURL=index.css.map */

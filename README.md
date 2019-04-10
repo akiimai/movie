@@ -1,4 +1,5 @@
 ## Movie App
 
-Practice making HTTP requests in Javascript. 
-Built with Javascript, HTML, CSS
+Movie app inspired by [Tania Rascia's](https://github.com/taniarascia) [Ghibli Movie App](https://taniarascia.github.io/sandbox/ghibli/)
+
+Built with Javascript, HTML, SCSS
